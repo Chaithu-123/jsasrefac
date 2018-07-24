@@ -1,0 +1,60 @@
+#title_cont {
+    background-color: lightskyblue;
+}
+
+#body_cont {
+    background-color: lightgray;
+    height: 8rem;
+}
+
+#card_cont {
+    border-color: black;
+    border-width: 0.15rem;
+}
+
+#container {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+#percol {
+    margin-bottom: 1em;
+}
+
+#col_movielist {
+    list-style: none;
+    background-color: lightgray;
+}
+
+#movie_list {
+    .col-lg-4 {
+        max-width: 28.33333% !important;
+    }
+}
+
+#pop_mov {
+    background-color: khaki;
+}
+
+#pers_coll {
+    background-color: khaki;
+}
+
+@media screen and (max-width:550px) {
+    #container {
+        display: flex;
+        flex-direction: column;
+    }
+    .container {
+        .row {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .movie-info {
+        img {
+            height: auto !important;
+            width: auto !important;
+        }
+    }
+}
