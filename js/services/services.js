@@ -1,23 +1,17 @@
-// let curCol = null;
-// $("#myModal").on("show.bs.modal", e => {
-//     let modaltitle = $(e.relatedTarget).data("modal");
-//     $(e.currentTarget).find("input[name='modaltitle']").val(modaltitle);
-// });
+$("#myModal").on("show.bs.modal", e => {
+    let modaltitle = $(e.relatedTarget).data("modal");
+    $(e.currentTarget).find("input[name='modaltitle']").val(modaltitle);
+});
 
 
-// $("#myModal").on("show.bs.modal", e => {
-//     let modalbody = $(e.relatedTarget).data("modal");
-//     $(e.currentTarget).find("input[name='modalbody']").val(modalbody);
-// });
+$("#myModal").on("show.bs.modal", e => {
+    let modalbody = $(e.relatedTarget).data("modal");
+    $(e.currentTarget).find("input[name='modalbody']").val(modalbody);
+});
 
-// $(document).ready(() => {
 
-//     getmovie();
 
-//     //     $('#myModal').modal('show');
-// });
-
-// // post request
+// post request
 
 // $("#save").click(() => {
 //     let modaltitle = $("#myModal input[id='myModalLabel']").val();
@@ -39,7 +33,7 @@
 //     alert("Data: " + data + "\nStatus: " + status);
 // });
 
-// // get response from json server
+// get response from json server
 
 // let getmovie = () => {
 //     $.getJSON("http://localhost:3000/MovieData/",
@@ -65,7 +59,7 @@
 //     }
 // }
 
-// // Function to Go To Edit Funcionality
+// Function to Go To Edit Funcionality
 
 // let showMovieCollection = (e) => {
 //     let curElement = e.currentTarget;
@@ -97,7 +91,7 @@
 
 
 
-// // Deleting Movies In Collection
+// Deleting Movies In Collection
 
 // let deletecollection = (e) => {
 //     let delElement = e.currentTarget;
