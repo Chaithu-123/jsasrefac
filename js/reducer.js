@@ -5,8 +5,13 @@ import {
     deleteMovie
 } from "./store"
 
-export default function collection(state, action) {
+let states = []
+export default function collection(state = { 'popularMovies': [], "searchResults": [] }, action) {
     switch (action.type) {
+        case "POPULAR_MOVIE":
+            const s = {...state.popularMovies, ...action.popularMovies }
+            states.push(s);
+            return s;
         case "ADD_COLLECTION":
             return addCollection(state, action)
 

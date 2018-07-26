@@ -1,5 +1,7 @@
 let curCol = null;
 let currentmovie = null;
+let state;
+import { store } from '../store'
 
 // Rendering Movie
 
@@ -192,3 +194,9 @@ export const addMovieToCollection = {
         }
     }
 }
+store.subscribe(() => {
+        state = store.getState();
+        console.log("State", state);
+    }
+
+)

@@ -8,7 +8,7 @@ import "../js/controller/controller";
 // import { deleteMovieCollection } from './services/renderCollection'
 import { saveMovieCollection, editMovieCollection, addMovieToCollection } from './services/renderCollection'
 import { renderCollection } from './services/renderCollection'
-// import { editCollection } from './store';
+import { editCollection } from './store';
 // import { popularMovies } from './view/view'
 
 

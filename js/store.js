@@ -3,14 +3,16 @@ import collection from "./reducer"
 
 
 
-const state = []
+let state = []
 
 
 let stateList = []
 
 
 export const store = createStore(collection, state)
-store.subscribe(renderCollection)
+store.subscribe(() => {
+    state = store.getState()
+})
 
 
 export const getCollection = (state, action) => {
