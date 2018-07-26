@@ -1,77 +1,80 @@
 {
-    "MovieData": [{
-            "Name": "Animation",
-            "Desc": "Animation Movies",
-            "Movies": "[{\"adult\":false,\"backdrop_path\":\"/h3t4zZPteUPqyDBrmz5Z2zzGM61.jpg\",\"belongs_to_collection\":{\"id\":185103,\"name\":\"Hotel Transylvania Collection\",\"poster_path\":\"/lrss5CB6dgRMnBoTlqhWoRTYbiv.jpg\",\"backdrop_path\":\"/arH2YrpG7EVMnA4JCtzAXt9wQQJ.jpg\"},\"budget\":80000000,\"genres\":[{\"id\":16,\"name\":\"Animation\"},{\"id\":35,\"name\":\"Comedy\"},{\"id\":10751,\"name\":\"Family\"},{\"id\":14,\"name\":\"Fantasy\"}],\"homepage\":null,\"id\":159824,\"imdb_id\":\"tt2510894\",\"original_language\":\"en\",\"original_title\":\"Hotel Transylvania 2\",\"overview\":\"When the old-old-old-fashioned vampire Vlad arrives at the hotel for an impromptu family get-together, Hotel Transylvania is in for a collision of supernatural old-school and modern day cool.\",\"popularity\":103.764,\"poster_path\":\"/5BGjNYVHWynVNIbo3eF6XhPeB1J.jpg\",\"production_companies\":[{\"id\":34,\"logo_path\":\"/GagSvqWlyPdkFHMfQ3pNq6ix9P.png\",\"name\":\"Sony Pictures\",\"origin_country\":\"US\"},{\"id\":5,\"logo_path\":\"/71BqEFAF4V3qjjMPCpLuyJFB9A.png\",\"name\":\"Columbia Pictures\",\"origin_country\":\"US\"}],\"production_countries\":[{\"iso_3166_1\":\"US\",\"name\":\"United States of America\"}],\"release_date\":\"2015-09-21\",\"revenue\":473226958,\"runtime\":89,\"spoken_languages\":[{\"iso_639_1\":\"en\",\"name\":\"English\"}],\"status\":\"Released\",\"tagline\":\"They're back to raise a little terror\",\"title\":\"Hotel Transylvania 2\",\"video\":false,\"vote_average\":6.7,\"vote_count\":2161}]",
-            "id": 1
-        },
-        {
-            "Name": "Action",
-            "Desc": "Action Movies",
-            "Movies": "[]",
-            "id": 2
-        },
-        {
-            "Name": "Horror",
-            "Desc": "Horror Movies",
-            "Movies": "[]",
-            "id": 3
-        },
-        {
-            "Name": "Comedy",
-            "Desc": "Comedy Movies",
-            "Movies": "[]",
-            "id": 4
-        }
-    ],
-    "ActionMovies": [{
-        "adult": "false",
-        "backdrop_path": "/6P3c80EOm7BodndGBUAJHHsHKrp.jpg",
-        "belongs_to_collection[id]": "422834",
-        "belongs_to_collection[name]": "Ant-Man Collection",
-        "belongs_to_collection[poster_path]": "/tdKbDECJQ3JmYaMubNaKFM1mgcY.jpg",
-        "belongs_to_collection[backdrop_path]": "/2KjtWUBiksmN8LsUouaZnxocu5N.jpg",
-        "budget": "140000000",
-        "genres[0][id]": "28",
-        "genres[0][name]": "Action",
-        "genres[1][id]": "12",
-        "genres[1][name]": "Adventure",
-        "genres[2][id]": "14",
-        "genres[2][name]": "Fantasy",
-        "genres[3][id]": "35",
-        "genres[3][name]": "Comedy",
-        "genres[4][id]": "878",
-        "genres[4][name]": "Science Fiction",
-        "homepage": "",
-        "id": "363088",
-        "imdb_id": "tt5095030",
-        "original_language": "en",
-        "original_title": "Ant-Man and the Wasp",
-        "overview": "As Scott Lang awaits expiration of his term of house detention, Hope van Dyne and Dr. Hank Pym involve him in a scheme to rescue Mrs. van Dyne from the micro-universe into which she has fallen, while two groups of schemers converge on them with intentions of stealing Dr. Pym's inventions.",
-        "popularity": "175.939",
-        "poster_path": "/rv1AWImgx386ULjcf62VYaW8zSt.jpg",
-        "production_companies[0][id]": "420",
-        "production_companies[0][logo_path]": "/hUzeosd33nzE5MCNsZxCGEKTXaQ.png",
-        "production_companies[0][name]": "Marvel Studios",
-        "production_companies[0][origin_country]": "US",
-        "production_countries[0][iso_3166_1]": "US",
-        "production_countries[0][name]": "United States of America",
-        "release_date": "2018-07-04",
-        "revenue": "198330000",
-        "runtime": "118",
-        "spoken_languages[0][iso_639_1]": "en",
-        "spoken_languages[0][name]": "English",
-        "status": "Released",
-        "tagline": "Real Heroes. Not Actual Size",
-        "title": "Ant-Man and the Wasp",
-        "video": "false",
-        "vote_average": "7.2",
-        "vote_count": "512"
-    }],
-    "ComedyMovies": [
-        {}
-    ],
-    "BioMovies": [
-        {}
-    ]
+  "MovieData": [
+    {
+      "Name": "Animation",
+      "Desc": "Animation Movies",
+      "Movies": "[]",
+      "id": 1
+    },
+    {
+      "Name": "Action",
+      "Desc": "Action Movies",
+      "Movies": "[{\"adult\":false,\"backdrop_path\":\"/3s9O5af2xWKWR5JzP2iJZpZeQQg.jpg\",\"belongs_to_collection\":{\"id\":328,\"name\":\"Jurassic Park Collection\",\"poster_path\":\"/qIm2nHXLpBBdMxi8dvfrnDkBUDh.jpg\",\"backdrop_path\":\"/pJjIH9QN0OkHFV9eue6XfRVnPkr.jpg\"},\"budget\":170000000,\"genres\":[{\"id\":28,\"name\":\"Action\"},{\"id\":12,\"name\":\"Adventure\"},{\"id\":878,\"name\":\"Science Fiction\"}],\"homepage\":\"http://www.jurassicworld.com/\",\"id\":351286,\"imdb_id\":\"tt4881806\",\"original_language\":\"en\",\"original_title\":\"Jurassic World: Fallen Kingdom\",\"overview\":\"Several years after the demise of Jurassic World, a volcanic eruption threatens the remaining dinosaurs on the island of Isla Nublar. Claire Dearing, the former park manager and founder of the Dinosaur Protection Group, recruits Owen Grady to help prevent the extinction of the dinosaurs once again.\",\"popularity\":215.291,\"poster_path\":\"/c9XxwwhPHdaImA2f1WEfEsbhaFB.jpg\",\"production_companies\":[{\"id\":56,\"logo_path\":\"/cEaxANEisCqeEoRvODv2dO1I0iI.png\",\"name\":\"Amblin Entertainment\",\"origin_country\":\"US\"},{\"id\":8111,\"logo_path\":null,\"name\":\"Apaches Entertainment\",\"origin_country\":\"\"},{\"id\":923,\"logo_path\":\"/5UQsZrfbfG2dYJbx8DxfoTr2Bvu.png\",\"name\":\"Legendary Entertainment\",\"origin_country\":\"US\"},{\"id\":33,\"logo_path\":\"/8lvHyhjr8oUKOOy2dKXoALWKdp0.png\",\"name\":\"Universal Pictures\",\"origin_country\":\"US\"},{\"id\":10338,\"logo_path\":\"/el2ap6lvjcEDdbyJoB3oKiYgXu9.png\",\"name\":\"Perfect World Pictures\",\"origin_country\":\"CN\"}],\"production_countries\":[{\"iso_3166_1\":\"US\",\"name\":\"United States of America\"}],\"release_date\":\"2018-06-06\",\"revenue\":1202110361,\"runtime\":128,\"spoken_languages\":[{\"iso_639_1\":\"en\",\"name\":\"English\"}],\"status\":\"Released\",\"tagline\":\"The park is gone\",\"title\":\"Jurassic World: Fallen Kingdom\",\"video\":false,\"vote_average\":6.6,\"vote_count\":2125},{\"adult\":false,\"backdrop_path\":\"/5qxePyMYDisLe8rJiBYX8HKEyv2.jpg\",\"belongs_to_collection\":{\"id\":87359,\"name\":\"Mission: Impossible Collection\",\"poster_path\":\"/gwyJPIhCK4Xz2WogeBnhCSQfUek.jpg\",\"backdrop_path\":\"/1kvKAHlSdFZTT9mhAXR54ggkxOU.jpg\"},\"budget\":0,\"genres\":[{\"id\":12,\"name\":\"Adventure\"},{\"id\":28,\"name\":\"Action\"},{\"id\":53,\"name\":\"Thriller\"}],\"homepage\":null,\"id\":353081,\"imdb_id\":\"tt4912910\",\"original_language\":\"en\",\"original_title\":\"Mission: Impossible - Fallout\",\"overview\":\"When an IMF mission ends badly, the world is faced with dire consequences. As Ethan Hunt takes it upon himself to fulfil his original briefing, the CIA begin to question his loyalty and his motives. The IMF team find themselves in a race against time, hunted by assassins while trying to prevent a global catastrophe.\",\"popularity\":227.486,\"poster_path\":\"/AkJQpZp9WoNdj7pLYSj1L0RcMMN.jpg\",\"production_companies\":[{\"id\":4,\"logo_path\":\"/fycMZt242LVjagMByZOLUGbCvv3.png\",\"name\":\"Paramount\",\"origin_country\":\"US\"},{\"id\":11461,\"logo_path\":\"/p9FoEt5shEKRWRKVIlvFaEmRnun.png\",\"name\":\"Bad Robot\",\"origin_country\":\"US\"},{\"id\":82819,\"logo_path\":\"/5Z8WWr0Lf1tInVWwJsxPP0uMz9a.png\",\"name\":\"Skydance Media\",\"origin_country\":\"US\"}],\"production_countries\":[{\"iso_3166_1\":\"US\",\"name\":\"United States of America\"}],\"release_date\":\"2018-07-25\",\"revenue\":0,\"runtime\":147,\"spoken_languages\":[{\"iso_639_1\":\"en\",\"name\":\"English\"}],\"status\":\"Released\",\"tagline\":\"Some Missions Are Not A Choice\",\"title\":\"Mission: Impossible - Fallout\",\"video\":false,\"vote_average\":6.5,\"vote_count\":56}]",
+      "id": 2
+    },
+    {
+      "Name": "Horror",
+      "Desc": "Horror Movies",
+      "Movies": "[]",
+      "id": 3
+    },
+    {
+      "Name": "Comedy",
+      "Desc": "Comedy Movies",
+      "Movies": "[]",
+      "id": 4
+    }
+  ],
+  "ActionMovies": [
+    {
+      "adult": "false",
+      "backdrop_path": "/6P3c80EOm7BodndGBUAJHHsHKrp.jpg",
+      "belongs_to_collection[id]": "422834",
+      "belongs_to_collection[name]": "Ant-Man Collection",
+      "belongs_to_collection[poster_path]": "/tdKbDECJQ3JmYaMubNaKFM1mgcY.jpg",
+      "belongs_to_collection[backdrop_path]": "/2KjtWUBiksmN8LsUouaZnxocu5N.jpg",
+      "budget": "140000000",
+      "genres[0][id]": "28",
+      "genres[0][name]": "Action",
+      "genres[1][id]": "12",
+      "genres[1][name]": "Adventure",
+      "genres[2][id]": "14",
+      "genres[2][name]": "Fantasy",
+      "genres[3][id]": "35",
+      "genres[3][name]": "Comedy",
+      "genres[4][id]": "878",
+      "genres[4][name]": "Science Fiction",
+      "homepage": "",
+      "id": "363088",
+      "imdb_id": "tt5095030",
+      "original_language": "en",
+      "original_title": "Ant-Man and the Wasp",
+      "overview": "As Scott Lang awaits expiration of his term of house detention, Hope van Dyne and Dr. Hank Pym involve him in a scheme to rescue Mrs. van Dyne from the micro-universe into which she has fallen, while two groups of schemers converge on them with intentions of stealing Dr. Pym's inventions.",
+      "popularity": "175.939",
+      "poster_path": "/rv1AWImgx386ULjcf62VYaW8zSt.jpg",
+      "production_companies[0][id]": "420",
+      "production_companies[0][logo_path]": "/hUzeosd33nzE5MCNsZxCGEKTXaQ.png",
+      "production_companies[0][name]": "Marvel Studios",
+      "production_companies[0][origin_country]": "US",
+      "production_countries[0][iso_3166_1]": "US",
+      "production_countries[0][name]": "United States of America",
+      "release_date": "2018-07-04",
+      "revenue": "198330000",
+      "runtime": "118",
+      "spoken_languages[0][iso_639_1]": "en",
+      "spoken_languages[0][name]": "English",
+      "status": "Released",
+      "tagline": "Real Heroes. Not Actual Size",
+      "title": "Ant-Man and the Wasp",
+      "video": "false",
+      "vote_average": "7.2",
+      "vote_count": "512"
+    }
+  ],
+  "ComedyMovies": [
+    {}
+  ],
+  "BioMovies": [
+    {}
+  ]
 }
