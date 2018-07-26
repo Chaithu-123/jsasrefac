@@ -66,12 +66,14 @@ export const saveMovieCollection = {
             let modaltitle = $("#myModal input[id='myModalLabel']").val();
             let modalbody = $("#myModal input[id='myModalbody']").val();
             let moviesdata = [];
+
             $.post("http://localhost:3000/MovieData/", {
                     Name: modaltitle,
                     Desc: modalbody,
                     Movies: JSON.stringify(moviesdata)
                 },
                 (data, status) => {
+
                     $("#container").append(`<div class="card" id="card_cont">
     <header class="container" id="title_cont">
       <h2> ` + data.Name + ` </h2>
@@ -79,7 +81,6 @@ export const saveMovieCollection = {
     <div class="container" id="body_cont">
      ` + data.Desc + `</div></div>`);
                 });
-            alert("Data: " + data + "\nStatus: " + status);
         });
     }
 

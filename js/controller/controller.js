@@ -1,4 +1,5 @@
 import { onPopularMovieClick } from "../view/view"
+import { store } from '../store'
 
 const baseURL = "https://api.themoviedb.org/3/";
 const APIKEY = "0857f3bcecfb71367f56290556a3e85c";
@@ -238,7 +239,7 @@ let addMovieToCollection = (cId, mdata, colDataList) => {
         }
         let movieStrData = JSON.stringify(movieData);
 
-
+        store.dispatch({ type: 'ADD_COLLECTION', payload: movieStrData })
         $.ajax({
             url: "http://localhost:3000/MovieData/" + colDataList[cindex].id,
             method: "PUT",

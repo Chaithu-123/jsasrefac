@@ -20,7 +20,7 @@ export const getCollection = (state, action) => {
     return action.dataItem
 }
 
-export const addCollection = (state, action) => {
+export const addMovieToCollection = (state, action) => {
     console.log(state)
     if (state.length === 0) {
         stateList.push(state)
@@ -55,8 +55,4 @@ export const editCollection = (state, action) => {
     ]
 }
 
-export const deleteCollection = (state, action) => {}
-
-export const getCollectionStateData = () => {
-    return stateList
-}
+export const addCollection = (state, action) => {}
