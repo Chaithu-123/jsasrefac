@@ -1,6 +1,6 @@
 import { createStore } from "redux"
 import collection from "./reducer"
-
+import { renderCard } from './userCollection/userCollectionController'
 
 
 let state = []
@@ -12,47 +12,30 @@ let stateList = []
 export const store = createStore(collection, state)
 store.subscribe(() => {
     state = store.getState()
+    console.log(state)
+    renderCard(store.getState())
 })
 
-
 export const getCollection = (state, action) => {
-    stateList = action.dataItem
-    return action.dataItem
+    stateList = action.details
+    return action.details
 }
-
-export const addMovieToCollection = (state, action) => {
-    console.log(state)
+export const addCollection = (state, action) => {
     if (state.length === 0) {
         stateList.push(state)
         return [
-            action.dataItem,
+            action.details,
         ]
     } else {
         stateList.push(state)
         return [
             ...state,
             {
-                "id": action.dataItem.id,
-                "Name": action.dataItem.Name,
-                "Description": action.dataItem.Description,
-                "Movies": action.dataItem.Movies,
+
+                "Name": action.details.Name,
+                "Description": action.details.Desc,
+                "Movies": action.details.Movies,
             },
         ]
-        console.log("added")
     }
 }
-
-export const editCollection = (state, action) => {
-    stateList.push(state)
-    return [
-        ...state,
-        {
-            "id": action.dataItem.id,
-            "Name": action.dataItem.Name,
-            "Description": action.dataItem.Description,
-            "Movies": action.dataItem.Movies,
-        },
-    ]
-}
-
-export const addCollection = (state, action) => {}

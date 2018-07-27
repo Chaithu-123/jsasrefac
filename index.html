@@ -68,8 +68,45 @@
         <div id="container"></div>
     </div>
 
+
+    <!-- Movie Details Model -->
+
+
     <div id="movie_details" class="page_navigation">
 
+    </div>
+    <div class="modal fade" id="showCol" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <form id="showmov" class="needs-validation" action="l" novalidate>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Collection Info</h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col-md-12 col-sm-12 mb-1">
+                            <label for="col_mName">Name</label>
+                            <input id="col_mName" type="text" name="col_mName" value="" />
+                        </div>
+                        <div class="col-md-12 col-sm-12 mb-1">
+                            <label>Movie List</label>
+                            <ul id="col_movielist">
+
+                            </ul>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+            </form>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" id="sav" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
     </div>
 
 
@@ -97,6 +134,44 @@
         <!-- Copyright -->
     </footer>
     <!-- Footer -->
+
+    <div class="modal fade" id="addMovieToCollectionModal" tabindex="-1" role="dialog" aria-labelledby="addMovieToCollectionModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-light">
+                    <h5 class="modal-title" id="addMovieToCollectionModalTitle">Add Movie To Collection</h5>
+                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <form id="addmovieform" class="needs-validation" action="l" novalidate>
+                        <div class="form-row">
+                            <div class="col-md-12 col-sm-12 mb-1">
+                                <label>Name :</label>
+                                <label id="lbl_mName"></label>
+                            </div>
+                            <div class="col-md-12 col-sm-12 mb-1">
+                                <label for="selcolletion">Select Collection:</label>
+                                <select class="form-control" id="selcolletion">
+
+                            </select>
+                                <div class="invalid-feedback">
+                                    Please select a collection
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button id="btn-addmovie" type="button" class="btn btn-secondary" data-dismiss="modal">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>

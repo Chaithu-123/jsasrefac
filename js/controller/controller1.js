@@ -154,7 +154,7 @@ let addMovieToCollection = (cId, mdata, colDataList) => {
         }
         let movieStrData = JSON.stringify(movieData);
 
-        store.dispatch({ type: 'ADD_MOVIE', payload: movieStrData })
+        store.dispatch({ type: 'ADD_MOVIE', details: movieStrData })
         $.ajax({
             url: "http://localhost:3000/MovieData/" + colDataList[cindex].id,
             method: "PUT",

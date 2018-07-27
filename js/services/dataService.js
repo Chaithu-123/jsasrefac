@@ -2,7 +2,22 @@ import { resolve } from "url";
 import { rejects } from "assert";
 import { appConfig } from "../appConfig"
 
-
+export const apiPromiseCall = (_url, _data, _type) => {
+    return new Promise((resolve, reject) => {
+        $.ajax({
+            url: _url,
+            type: _type,
+            data: _data,
+            dataType: "json",
+            success: (data) => {
+                resolve(data)
+            },
+            error: (err) => {
+                reject(err)
+            },
+        })
+    })
+}
 export const dataService = {
     getPopularMovieData: () => {
         return new Promise((resolve, reject) => {
@@ -22,15 +37,15 @@ export const dataService = {
         })
     },
     getData(_url) {
-        return this.apiPromiseCall(_url, {}, "GET")
+        return apiPromiseCall(_url, {}, "GET")
     },
     postData(_url, _data) {
-        return this.apiPromiseCall(_url, _data, "POST")
+        return apiPromiseCall(_url, _data, "POST")
     },
     putData(_url, _data) {
-        return this.apiPromiseCall(_url, _data, "PUT")
+        return apiPromiseCall(_url, _data, "PUT")
     },
     deleteData(_url, _id) {
-        return this.apiPromiseCall(_url, {}, "DELETE")
+        return apiPromiseCall(_url, {}, "DELETE")
     }
 }

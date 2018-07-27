@@ -1,6 +1,7 @@
 import { renderHtmlToContainer } from "../common"
 import { getPopularMovieContainer, getPopularMovieCards } from "./popularMovieView"
 import { dataService } from "../services/dataService"
+import { createMovieDetail } from "../moviewDetails/movieDetailscontroller"
 
 
 
@@ -30,4 +31,5 @@ export const onClickMovieCard = (event) => {
     const curMovieImgId = curEle.getElementsByTagName("img")[0].id
     const mId = curMovieImgId.substr(5)
     console.log(mId)
+    createMovieDetail(mId, "#movie_details")
 }

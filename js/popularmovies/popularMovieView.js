@@ -4,7 +4,6 @@ import { appConfig } from "../appConfig"
 const pMovieCardClasses = ["tile1", "tile2", "tile3", "tile4", "tile5", "tile6", "tile7", "tile8", "tile9", "tile10", "tile11", "tile12"]
 
 export const getPopularMovieContainer = () => {
-
     const pMovieTemp = `<div id="whole_content">
         <div id="pop_mov">
             <h4>Popular Movies</h4>
