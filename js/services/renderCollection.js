@@ -6,7 +6,14 @@ import { store } from '../store'
 // Rendering Movie
 
 export const renderCollection = {
+
     getmovie: (_showMovieCollection) => {
+        store.subscribe(() => {
+                state = store.getState();
+                console.log("State", state);
+            }
+
+        )
 
         $.getJSON("http://localhost:3000/MovieData/",
             (data, status) => {
@@ -195,9 +202,3 @@ export const addMovieToCollection = {
         }
     }
 }
-store.subscribe(() => {
-        state = store.getState();
-        console.log("State", state);
-    }
-
-)
