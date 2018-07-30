@@ -39,3 +39,17 @@ export const addCollection = (state, action) => {
         ]
     }
 }
+
+export const addMovieToCollection = (state, action) => {
+    const curIndex = state.findIndex((x) => { x.id == action.details.id })
+    state[curIndex] = action.details
+    return state
+}
+
+export const delMovieFromCollection = (state, action) => {
+
+}
+
+export const deleteCollection = (state, action) => {
+
+}

@@ -62,6 +62,41 @@ export const addMovieToCollection = (event) => {
             e.stopPropagation();
         }
         form.classList.add('was-validated');
-        addMovieToCollection(selectedOptionId.substr(4), currentMovieDetails, collectionDataList);
+        addMovieClick(selectedOptionId.substr(4), currentMovieDetails, userColList);
     });
+}
+
+export const addMovieClick = (cId, mdata, colDataList) => {
+    let cindex = colDataList.findIndex(x => x.id == cId);
+    let movieData;
+    let existMovieIndex;
+    if (cindex != -1) {
+        if (!(colDataList[cindex].Movies == "")) {
+            movieData = JSON.parse(colDataList[cindex].Movies);
+            existMovieIndex = movieData.findIndex(x => x.id == mdata.id);
+            if (existMovieIndex == -1) {
+                movieData.push(mdata);
+
+            }
+        } else {
+            movieData = [];
+            movieData.push(mdata);
+        }
+        let movieStrData = JSON.stringify(movieData);
+        const putMovieData = {
+            "Name": colDataList[cindex].Name,
+            "Desc": colDataList[cindex].Desc,
+            "Movies": movieStrData,
+        }
+        dataService.putData("http://localhost:3000/MovieData/" + colDataList[cindex].id, putMovieData).then((data) => {
+            if (data) {
+                console.log(data)
+                store.dispatch({
+                    type: 'ADD_MOVIE',
+                    details: data
+                })
+                console.log("Movie successfully updated")
+            }
+        })
+    }
 }

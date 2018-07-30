@@ -1,6 +1,8 @@
 import '../scss/styles.scss';
 import "../node_modules/bootstrap/scss/bootstrap.scss";
 import "./search";
+import "./modal"
+import "./controller/controller"
 
 import { renderCollection, saveMovieCollection, deleteMovieCollection } from './modal'
 import { createPopularMovieContainer, createPopularMovieCards } from "./popularmovies/popularMoviecontroller"
@@ -18,6 +20,3 @@ $("#save").click((event) => {
 })
 
 renderCollection.getmovie(renderCollection.showMovieCollection)
-    //saveMovieCollection.savemovie()
-
-// registerEvent("#save", onSaveCard($("#myModal input[id='myModalLabel']").val(), $("#myModal input[id='myModalbody']").val()))

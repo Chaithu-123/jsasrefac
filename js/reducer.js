@@ -1,7 +1,9 @@
 import {
 
     addCollection,
-    getCollection
+    getCollection,
+    addMovieToCollection,
+    delMovieFromCollection
 } from "./store"
 
 
@@ -15,10 +17,16 @@ export default function collection(state = [], action) {
             return s;
 
         case "ADD_COLLECTION":
-
             return addCollection(state, action)
 
+        case "ADD_MOVIE":
+            return addMovieToCollection(state, action)
         default:
             return state
+
+        case "DEL_MOVIE":
+
+        case "DEL_COLLECTION":
+
     }
 }
